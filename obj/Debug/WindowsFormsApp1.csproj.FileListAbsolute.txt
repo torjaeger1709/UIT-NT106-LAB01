@@ -1,0 +1,14 @@
+D:\DAI_HOC\NAM_2\LTMCB\LAB_1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+D:\DAI_HOC\NAM_2\LTMCB\LAB_1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+D:\DAI_HOC\NAM_2\LTMCB\LAB_1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+D:\DAI_HOC\NAM_2\LTMCB\LAB_1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.AssemblyReference.cache
+D:\DAI_HOC\NAM_2\LTMCB\LAB_1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+D:\DAI_HOC\NAM_2\LTMCB\LAB_1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+D:\DAI_HOC\NAM_2\LTMCB\LAB_1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+D:\DAI_HOC\NAM_2\LTMCB\LAB_1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+D:\DAI_HOC\NAM_2\LTMCB\LAB_1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+D:\DAI_HOC\NAM_2\LTMCB\LAB_1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.B1.resources
+D:\DAI_HOC\NAM_2\LTMCB\LAB_1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.LAB01.resources
+D:\DAI_HOC\NAM_2\LTMCB\LAB_1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.BT2.resources
+D:\DAI_HOC\NAM_2\LTMCB\LAB_1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.BT3.resources
+D:\DAI_HOC\NAM_2\LTMCB\LAB_1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.B4.resources
