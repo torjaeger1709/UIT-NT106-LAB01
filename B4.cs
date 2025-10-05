@@ -119,6 +119,7 @@ namespace WindowsFormsApp1
             int room = int.Parse(cbRoom.SelectedItem.ToString().Replace("Phòng ", ""));
             var key = (movie, room);
 
+            // Initialize collections if they don't exist
             if (!bookedSeats.ContainsKey(key))
                 bookedSeats[key] = new List<string>();
             if (!selectedSeats.ContainsKey(key))
@@ -127,17 +128,41 @@ namespace WindowsFormsApp1
             if (bookedSeats[key].Contains(seat))
                 return;
 
+            string[] veVIP = { "B2", "B3", "B4" };
+            
             if (selectedSeats[key].Contains(seat))
             {
+                // Removing a selected seat
                 selectedSeats[key].Remove(seat);
                 btn.BackColor = (Color)btn.Tag;
             }
             else
             {
+                // Check VIP ticket limit when trying to select a VIP seat
+                if (veVIP.Contains(seat))
+                {
+                    // Count total VIP seats selected across all rooms
+                    int totalVIPSelected = selectedSeats
+                        .SelectMany(kv => kv.Value)
+                        .Count(s => veVIP.Contains(s));
+
+                    if (totalVIPSelected >= 2)
+                    {
+                        MessageBox.Show("Không thể chọn quá 2 vé VIP ở các phòng chiếu.", 
+                            "Giới hạn vé VIP", 
+                            MessageBoxButtons.OK, 
+                            MessageBoxIcon.Warning);
+                        return;
+                    }
+                }
+
+                // If validation passes, add the seat
                 selectedSeats[key].Add(seat);
                 btn.BackColor = Color.LightGreen;
             }
         }
+
+
 
         private void cbMovie_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -193,5 +218,7 @@ namespace WindowsFormsApp1
 
             lblResult.Text = "Tổng tiền: " + total.ToString("N0") + " đ";
         }
+
+      
     }
 }

@@ -12,3 +12,4 @@ D:\DAI_HOC\NAM_2\LTMCB\LAB_1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.LAB01.r
 D:\DAI_HOC\NAM_2\LTMCB\LAB_1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.BT2.resources
 D:\DAI_HOC\NAM_2\LTMCB\LAB_1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.BT3.resources
 D:\DAI_HOC\NAM_2\LTMCB\LAB_1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.B4.resources
+D:\DAI_HOC\NAM_2\LTMCB\LAB_1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.B5.resources

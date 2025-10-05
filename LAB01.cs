@@ -49,5 +49,13 @@ namespace WindowsFormsApp1
             Button btn = sender as Button;
             btn.BackColor = Color.LightGreen;
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            B5 Bai5 = new B5();
+            Bai5.Show();
+            Button btn = sender as Button;
+            btn.BackColor = Color.LightGreen;
+        }
     }
 }

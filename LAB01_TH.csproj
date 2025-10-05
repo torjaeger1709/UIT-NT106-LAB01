@@ -58,6 +58,12 @@
     <Compile Include="B4.Designer.cs">
       <DependentUpon>B4.cs</DependentUpon>
     </Compile>
+    <Compile Include="B5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="B5.Designer.cs">
+      <DependentUpon>B5.cs</DependentUpon>
+    </Compile>
     <Compile Include="BT2.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,6 +89,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="B4.resx">
       <DependentUpon>B4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="B5.resx">
+      <DependentUpon>B5.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="BT2.resx">
       <DependentUpon>BT2.cs</DependentUpon>
@@ -115,5 +124,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
