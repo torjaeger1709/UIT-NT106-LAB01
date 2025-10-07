@@ -35,6 +35,10 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.posterPictureBox = new System.Windows.Forms.PictureBox();
+            this.exit = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.posterPictureBox)).BeginInit();
@@ -45,9 +49,9 @@
             this.cbMovie.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbMovie.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbMovie.FormattingEnabled = true;
-            this.cbMovie.Location = new System.Drawing.Point(224, 156);
+            this.cbMovie.Location = new System.Drawing.Point(239, 156);
             this.cbMovie.Name = "cbMovie";
-            this.cbMovie.Size = new System.Drawing.Size(200, 30);
+            this.cbMovie.Size = new System.Drawing.Size(213, 30);
             this.cbMovie.TabIndex = 0;
             this.cbMovie.SelectedIndexChanged += new System.EventHandler(this.cbMovie_SelectedIndexChanged);
             // 
@@ -56,28 +60,29 @@
             this.cbRoom.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbRoom.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbRoom.FormattingEnabled = true;
-            this.cbRoom.Location = new System.Drawing.Point(224, 233);
+            this.cbRoom.Location = new System.Drawing.Point(239, 233);
             this.cbRoom.Name = "cbRoom";
-            this.cbRoom.Size = new System.Drawing.Size(200, 30);
+            this.cbRoom.Size = new System.Drawing.Size(213, 30);
             this.cbRoom.TabIndex = 1;
             this.cbRoom.SelectedIndexChanged += new System.EventHandler(this.cbRoom_SelectedIndexChanged);
             // 
             // btnCalculate
             // 
-            this.btnCalculate.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCalculate.Location = new System.Drawing.Point(224, 281);
+            this.btnCalculate.BackColor = System.Drawing.Color.LightGreen;
+            this.btnCalculate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCalculate.Location = new System.Drawing.Point(239, 281);
             this.btnCalculate.Name = "btnCalculate";
-            this.btnCalculate.Size = new System.Drawing.Size(114, 47);
+            this.btnCalculate.Size = new System.Drawing.Size(103, 47);
             this.btnCalculate.TabIndex = 3;
-            this.btnCalculate.Text = "Tính tiền";
-            this.btnCalculate.UseVisualStyleBackColor = true;
+            this.btnCalculate.Text = "TÍNH TIỀN";
+            this.btnCalculate.UseVisualStyleBackColor = false;
             this.btnCalculate.Click += new System.EventHandler(this.btnCalculate_Click);
             // 
             // lblResult
             // 
             this.lblResult.AutoSize = true;
             this.lblResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblResult.Location = new System.Drawing.Point(219, 331);
+            this.lblResult.Location = new System.Drawing.Point(234, 331);
             this.lblResult.Name = "lblResult";
             this.lblResult.Size = new System.Drawing.Size(137, 26);
             this.lblResult.TabIndex = 4;
@@ -85,7 +90,7 @@
             // 
             // panelSeats
             // 
-            this.panelSeats.Location = new System.Drawing.Point(468, 148);
+            this.panelSeats.Location = new System.Drawing.Point(474, 162);
             this.panelSeats.Name = "panelSeats";
             this.panelSeats.Size = new System.Drawing.Size(300, 180);
             this.panelSeats.TabIndex = 5;
@@ -94,7 +99,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(219, 127);
+            this.label1.Location = new System.Drawing.Point(234, 127);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(108, 26);
             this.label1.TabIndex = 6;
@@ -104,7 +109,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(219, 204);
+            this.label2.Location = new System.Drawing.Point(234, 204);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(87, 26);
             this.label2.TabIndex = 7;
@@ -114,7 +119,7 @@
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.panel1.Controls.Add(this.SCREEN);
-            this.panel1.Location = new System.Drawing.Point(468, 113);
+            this.panel1.Location = new System.Drawing.Point(474, 127);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(270, 29);
             this.panel1.TabIndex = 8;
@@ -130,7 +135,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.panel2.BackColor = System.Drawing.Color.RosyBrown;
             this.panel2.Controls.Add(this.label3);
             this.panel2.Location = new System.Drawing.Point(-10, 0);
             this.panel2.Name = "panel2";
@@ -150,18 +155,63 @@
             // posterPictureBox
             // 
             this.posterPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("posterPictureBox.Image")));
-            this.posterPictureBox.Location = new System.Drawing.Point(12, 114);
+            this.posterPictureBox.Location = new System.Drawing.Point(-2, 47);
             this.posterPictureBox.Name = "posterPictureBox";
-            this.posterPictureBox.Size = new System.Drawing.Size(201, 261);
+            this.posterPictureBox.Size = new System.Drawing.Size(220, 445);
             this.posterPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.posterPictureBox.TabIndex = 10;
             this.posterPictureBox.TabStop = false;
             // 
+            // exit
+            // 
+            this.exit.BackColor = System.Drawing.Color.LightCoral;
+            this.exit.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.exit.Location = new System.Drawing.Point(348, 281);
+            this.exit.Name = "exit";
+            this.exit.Size = new System.Drawing.Size(104, 47);
+            this.exit.TabIndex = 11;
+            this.exit.Text = "THOÁT";
+            this.exit.UseVisualStyleBackColor = false;
+            this.exit.Click += new System.EventHandler(this.exit_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(605, 359);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(143, 20);
+            this.label4.TabIndex = 12;
+            this.label4.Text = "Màu hồng: Vé VIP";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(605, 379);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(169, 20);
+            this.label5.TabIndex = 13;
+            this.label5.Text = "Màu trắng: Vé thường";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(605, 399);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(134, 20);
+            this.label6.TabIndex = 14;
+            this.label6.Text = "Màu xám: Vé vớt";
+            // 
             // B4
             // 
-            this.BackColor = System.Drawing.SystemColors.Info;
+            this.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.ClientSize = new System.Drawing.Size(786, 467);
-            this.Controls.Add(this.posterPictureBox);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.exit);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label2);
@@ -171,6 +221,8 @@
             this.Controls.Add(this.btnCalculate);
             this.Controls.Add(this.cbRoom);
             this.Controls.Add(this.cbMovie);
+            this.Controls.Add(this.posterPictureBox);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "B4";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Quản lý phòng vé";
@@ -196,5 +248,9 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox posterPictureBox;
+        private System.Windows.Forms.Button exit;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
     }
 }

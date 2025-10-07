@@ -43,6 +43,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.somin = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -66,12 +67,12 @@
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.panel14 = new System.Windows.Forms.Panel();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel13 = new System.Windows.Forms.Panel();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.panel7 = new System.Windows.Forms.Panel();
             this.pictureBox16 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -95,7 +96,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.panel14.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             this.panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
@@ -105,7 +105,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(306, 106);
+            this.label1.Location = new System.Drawing.Point(326, 64);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(118, 26);
             this.label1.TabIndex = 0;
@@ -114,7 +114,7 @@
             // so1
             // 
             this.so1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.so1.Location = new System.Drawing.Point(431, 109);
+            this.so1.Location = new System.Drawing.Point(451, 67);
             this.so1.Name = "so1";
             this.so1.Size = new System.Drawing.Size(159, 28);
             this.so1.TabIndex = 1;
@@ -123,7 +123,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(306, 154);
+            this.label2.Location = new System.Drawing.Point(326, 112);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(118, 26);
             this.label2.TabIndex = 2;
@@ -132,7 +132,7 @@
             // so2
             // 
             this.so2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.so2.Location = new System.Drawing.Point(431, 157);
+            this.so2.Location = new System.Drawing.Point(451, 115);
             this.so2.Name = "so2";
             this.so2.Size = new System.Drawing.Size(159, 28);
             this.so2.TabIndex = 3;
@@ -141,7 +141,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(306, 206);
+            this.label3.Location = new System.Drawing.Point(326, 164);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(118, 26);
             this.label3.TabIndex = 4;
@@ -150,7 +150,7 @@
             // so3
             // 
             this.so3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.so3.Location = new System.Drawing.Point(431, 206);
+            this.so3.Location = new System.Drawing.Point(451, 164);
             this.so3.Name = "so3";
             this.so3.Size = new System.Drawing.Size(159, 28);
             this.so3.TabIndex = 5;
@@ -158,7 +158,7 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.button1.Location = new System.Drawing.Point(303, 254);
+            this.button1.Location = new System.Drawing.Point(323, 212);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(76, 76);
             this.button1.TabIndex = 6;
@@ -169,7 +169,7 @@
             // button2
             // 
             this.button2.BackColor = System.Drawing.SystemColors.Info;
-            this.button2.Location = new System.Drawing.Point(416, 255);
+            this.button2.Location = new System.Drawing.Point(436, 213);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(76, 75);
             this.button2.TabIndex = 7;
@@ -180,7 +180,7 @@
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.IndianRed;
-            this.button3.Location = new System.Drawing.Point(514, 255);
+            this.button3.Location = new System.Drawing.Point(534, 213);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(76, 75);
             this.button3.TabIndex = 8;
@@ -192,7 +192,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(306, 402);
+            this.label4.Location = new System.Drawing.Point(326, 360);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(166, 26);
             this.label4.TabIndex = 9;
@@ -201,7 +201,7 @@
             // somax
             // 
             this.somax.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.somax.Location = new System.Drawing.Point(479, 400);
+            this.somax.Location = new System.Drawing.Point(499, 358);
             this.somax.Name = "somax";
             this.somax.Size = new System.Drawing.Size(111, 28);
             this.somax.TabIndex = 10;
@@ -210,7 +210,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(306, 350);
+            this.label5.Location = new System.Drawing.Point(326, 308);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(151, 26);
             this.label5.TabIndex = 11;
@@ -219,7 +219,7 @@
             // somin
             // 
             this.somin.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.somin.Location = new System.Drawing.Point(479, 348);
+            this.somin.Location = new System.Drawing.Point(499, 306);
             this.somin.Name = "somin";
             this.somin.Size = new System.Drawing.Size(111, 28);
             this.somin.TabIndex = 12;
@@ -227,13 +227,23 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.pictureBox2);
+            this.panel1.Controls.Add(this.panel2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(240, 450);
+            this.panel1.Size = new System.Drawing.Size(282, 450);
             this.panel1.TabIndex = 13;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(-37, -18);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(355, 503);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 14;
+            this.pictureBox2.TabStop = false;
             // 
             // panel2
             // 
@@ -243,7 +253,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(240, 15);
+            this.panel2.Size = new System.Drawing.Size(282, 15);
             this.panel2.TabIndex = 13;
             // 
             // panel4
@@ -469,23 +479,13 @@
             this.pictureBox9.TabIndex = 0;
             this.pictureBox9.TabStop = false;
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(-294, 15);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(1200, 675);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
-            // 
             // panel13
             // 
             this.panel13.BackColor = System.Drawing.Color.White;
             this.panel13.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel13.Location = new System.Drawing.Point(240, 0);
+            this.panel13.Location = new System.Drawing.Point(282, 0);
             this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(560, 15);
+            this.panel13.Size = new System.Drawing.Size(518, 15);
             this.panel13.TabIndex = 17;
             // 
             // pictureBox12
@@ -541,10 +541,11 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.so1);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "BT2";
             this.Text = "BT2";
             this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -569,7 +570,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.panel14.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             this.panel7.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
@@ -594,7 +594,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox somin;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.PictureBox pictureBox3;
@@ -622,5 +621,6 @@
         private System.Windows.Forms.PictureBox pictureBox12;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.PictureBox pictureBox16;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

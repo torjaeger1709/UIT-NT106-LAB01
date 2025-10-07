@@ -13,3 +13,7 @@ D:\DAI_HOC\NAM_2\LTMCB\THUC_HANH\LAB_1\WindowsFormsApp1\obj\Debug\LAB01_TH.cspro
 D:\DAI_HOC\NAM_2\LTMCB\THUC_HANH\LAB_1\WindowsFormsApp1\obj\Debug\LAB01_TH.csproj.CoreCompileInputs.cache
 D:\DAI_HOC\NAM_2\LTMCB\THUC_HANH\LAB_1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 D:\DAI_HOC\NAM_2\LTMCB\THUC_HANH\LAB_1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+D:\DAI_HOC\NAM_2\LTMCB\THUC_HANH\LAB_1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.B6.resources
+D:\DAI_HOC\NAM_2\LTMCB\THUC_HANH\LAB_1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.B7.resources
+D:\DAI_HOC\NAM_2\LTMCB\THUC_HANH\LAB_1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe.config
+D:\DAI_HOC\NAM_2\LTMCB\THUC_HANH\LAB_1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.B8.resources

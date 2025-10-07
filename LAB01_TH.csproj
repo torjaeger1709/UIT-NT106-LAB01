@@ -64,6 +64,24 @@
     <Compile Include="B5.Designer.cs">
       <DependentUpon>B5.cs</DependentUpon>
     </Compile>
+    <Compile Include="B6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="B6.Designer.cs">
+      <DependentUpon>B6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="B7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="B7.Designer.cs">
+      <DependentUpon>B7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="B8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="B8.Designer.cs">
+      <DependentUpon>B8.cs</DependentUpon>
+    </Compile>
     <Compile Include="BT2.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -92,6 +110,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="B5.resx">
       <DependentUpon>B5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="B6.resx">
+      <DependentUpon>B6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="B7.resx">
+      <DependentUpon>B7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="B8.resx">
+      <DependentUpon>B8.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="BT2.resx">
       <DependentUpon>BT2.cs</DependentUpon>

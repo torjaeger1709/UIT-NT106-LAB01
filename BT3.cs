@@ -97,7 +97,7 @@ namespace WindowsFormsApp1
 
         private void thoat_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            this.Close();
         }
     }
 }

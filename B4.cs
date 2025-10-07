@@ -219,6 +219,9 @@ namespace WindowsFormsApp1
             lblResult.Text = "Tổng tiền: " + total.ToString("N0") + " đ";
         }
 
-      
+        private void exit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
