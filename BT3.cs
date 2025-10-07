@@ -81,11 +81,22 @@ namespace WindowsFormsApp1
             // Lấy dữ liệu từ TextBox và xử lý
             if (long.TryParse(so.Text, out long n))
             {
+                if (n < 0)
+                {
+                    MessageBox.Show("Vui lòng nhập số nguyên không âm!");
+                    so.Text = "";
+                    so.Focus();
+                    ketqua.Text = "";
+                    return;
+                }
                 ketqua.Text = DocSo(n);
             }
             else
             {
                 MessageBox.Show("Vui lòng nhập số hợp lệ!");
+                so.Text = "";
+                so.Focus();
+                ketqua.Text = "";
             }
         }
 
