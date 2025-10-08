@@ -14,7 +14,7 @@ namespace WindowsFormsApp1
 
         private void Xoa_Click(object sender, EventArgs e)
         {
-            Xoa.Text = "";
+            NhapDuLieu.Text = "";
         }
 
         private void thoat_Click(object sender, EventArgs e)
@@ -41,16 +41,23 @@ namespace WindowsFormsApp1
             }
 
             string hoTen = parts[0].Trim();
-            double[] diem;
-
-            try
+            // Kiểm tra họ tên không phải là số
+            double temp;
+            if (double.TryParse(hoTen, out temp))
             {
-                diem = parts.Skip(1).Select(x => double.Parse(x.Trim())).ToArray();
-            }
-            catch
-            {
-                MessageBox.Show("Sai định dạng điểm! Hãy nhập số hợp lệ.");
+                MessageBox.Show("Phần tử đầu tiên phải là họ tên, không phải là số!");
                 return;
+            }
+
+            double[] diem = new double[parts.Length - 1];
+            for (int i = 1; i < parts.Length; i++)
+            {
+                string diemStr = parts[i].Trim();
+                if (!double.TryParse(diemStr, out diem[i - 1]))
+                {
+                    MessageBox.Show($"Điểm thứ {i} không hợp lệ! Phải là số.");
+                    return;
+                }
             }
 
             // In ra kết quả
@@ -68,14 +75,14 @@ namespace WindowsFormsApp1
 
             // Liệt kê điểm
             for (int i = 0; i < diem.Length; i++)
-                 AddLabel($"Môn {i + 1}: {diem[i]}", ref y);
-                 AddLabel("", ref y);
-                 AddLabel($"Điểm trung bình: {dtb:F2}", ref y);
-                 AddLabel($"Điểm cao nhất: {max}", ref y);
-                 AddLabel($"Điểm thấp nhất: {min}", ref y);
-                 AddLabel($"Số môn đậu: {soMonDau}", ref y);
-                 AddLabel($"Số môn không đậu: {soMonRot}", ref y);
-                 AddLabel($"Xếp loại: {xepLoai}", ref y, FontStyle.Bold);
+                AddLabel($"Môn {i + 1}: {diem[i]}", ref y);
+            AddLabel("", ref y);
+            AddLabel($"Điểm trung bình: {dtb:F2}", ref y);
+            AddLabel($"Điểm cao nhất: {max}", ref y);
+            AddLabel($"Điểm thấp nhất: {min}", ref y);
+            AddLabel($"Số môn đậu: {soMonDau}", ref y);
+            AddLabel($"Số môn không đậu: {soMonRot}", ref y);
+            AddLabel($"Xếp loại: {xepLoai}", ref y, FontStyle.Bold);
         }
         private void AddLabel(string text, ref int y, FontStyle style = FontStyle.Regular)
         {

@@ -82,7 +82,6 @@ namespace WindowsFormsApp1
                 result.AppendLine($"Tổng S = A¹ + A² + ... + Aᴮ = {sum}");
             }
 
-            // Show result in the panel
             ShowResultInPanel(result.ToString());
         }
 

@@ -54,7 +54,6 @@ namespace WindowsFormsApp1
                 return result.Trim();
             }
 
-            // Hàm đọc số nhiều chữ số
             string DocSo(long number)
             {
                 if (number == 0) return "không";
@@ -78,7 +77,6 @@ namespace WindowsFormsApp1
                 return result.Trim();
             }
 
-            // Lấy dữ liệu từ TextBox và xử lý
             if (long.TryParse(so.Text, out long n))
             {
                 if (n < 0)

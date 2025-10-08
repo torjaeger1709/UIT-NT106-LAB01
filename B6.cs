@@ -30,6 +30,11 @@ namespace WindowsFormsApp1
                 }
                 int day = int.Parse(parts[0]);
                 int month = int.Parse(parts[1]);
+                if (!IsValidDate(day, month))
+                {
+                    MessageBox.Show("Ngày không hợp lệ! Vui lòng nhập lại.");
+                    return;
+                }
                 string cung = XacDinhCungHoangDao(day, month);
                 textBox2.Text = cung.ToString();
             }
@@ -78,6 +83,16 @@ namespace WindowsFormsApp1
         private void button3_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private bool IsValidDate(int day, int month)
+        {
+            int[] daysInMonth = { 0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
+            if (month < 1 || month > 12)
+                return false;
+            if (day < 1 || day > daysInMonth[month])
+                return false;
+            return true;
         }
     }
 }

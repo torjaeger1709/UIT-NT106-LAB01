@@ -127,9 +127,7 @@ namespace WindowsFormsApp1
 
             if (bookedSeats[key].Contains(seat))
                 return;
-
-            string[] veVIP = { "B2", "B3", "B4" };
-            
+    
             if (selectedSeats[key].Contains(seat))
             {
                 // Removing a selected seat
@@ -138,22 +136,18 @@ namespace WindowsFormsApp1
             }
             else
             {
-                // Check VIP ticket limit when trying to select a VIP seat
-                if (veVIP.Contains(seat))
-                {
-                    // Count total VIP seats selected across all rooms
-                    int totalVIPSelected = selectedSeats
-                        .SelectMany(kv => kv.Value)
-                        .Count(s => veVIP.Contains(s));
+                // Count total seats selected across all rooms
+                int totalSeatsSelected = selectedSeats
+                    .SelectMany(kv => kv.Value)
+                    .Count();
 
-                    if (totalVIPSelected >= 2)
-                    {
-                        MessageBox.Show("Không thể chọn quá 2 vé VIP ở các phòng chiếu.", 
-                            "Giới hạn vé VIP", 
-                            MessageBoxButtons.OK, 
-                            MessageBoxIcon.Warning);
-                        return;
-                    }
+                if (totalSeatsSelected >= 2)
+                {
+                    MessageBox.Show("Không thể chọn quá 2 vé cho tất cả loại ghế ở các phòng chiếu.",
+                        "Giới hạn vé",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Warning);
+                    return;
                 }
 
                 // If validation passes, add the seat
